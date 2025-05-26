@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yellowdragonfruit.com/sitemap.xml
+
+# Block admin areas if any
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all images
+User-agent: Googlebot-Image
+Allow: /images/ 
