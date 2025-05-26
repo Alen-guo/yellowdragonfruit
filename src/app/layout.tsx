@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   // Google Search Console验证 - 请替换为您的实际验证码
   verification: {
-    google: "your-google-search-console-verification-code-here",
+    google: "wmxhPrcDNJH_MaJiwBgDou1Uxl1Tm9uE5ircs-t60XU",
   },
 };
 
