@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "How to Grow Yellow Dragon Fruit | Complete Plant Guide",
@@ -164,7 +165,7 @@ export default function PlantPage() {
         </div>
         {/* 面包屑导航 */}
         <nav className="mb-4 text-sm text-yellow-700">
-          <a href="/" className="hover:text-yellow-600">Home</a> <span className="mx-2">{'>'}</span> <span className="text-yellow-900 font-medium">Planting Guide</span>
+          <Link href="/" className="hover:text-yellow-600">Home</Link> <span className="mx-2">{'>'}</span> <span className="text-yellow-900 font-medium">Planting Guide</span>
         </nav>
         <h1 className="text-3xl font-bold text-yellow-900 mb-6 text-center">How to Grow Yellow Dragon Fruit</h1>
         
@@ -271,7 +272,7 @@ export default function PlantPage() {
         </section>
         
         <section className="mb-8 flex items-start gap-3">
-          <span className="text-2xl">��</span>
+          <span className="text-2xl">🌿</span>
           <div>
             <h2 className="text-xl font-semibold text-yellow-800 mb-2">Watering & Feeding</h2>
             <div className="bg-blue-50 p-4 rounded-lg mb-4">

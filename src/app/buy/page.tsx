@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Where to Buy Yellow Dragon Fruit | Find Near Me & Online",
@@ -13,7 +14,7 @@ export default function BuyPage() {
         <Image src="/images/logo.png" alt="Yellow Dragon Fruit" width={120} height={120} className="rounded-full shadow-lg" />
       </div>
       <nav className="mb-4 text-sm text-yellow-700">
-        <a href="/" className="hover:text-yellow-600">Home</a> <span className="mx-2">{'>'}</span> <span className="text-yellow-900 font-medium">Where to Buy</span>
+        <Link href="/" className="hover:text-yellow-600">Home</Link> <span className="mx-2">{'>'}</span> <span className="text-yellow-900 font-medium">Where to Buy</span>
       </nav>
       <h1 className="text-3xl font-bold text-yellow-900 mb-6 text-center">Where to Buy Yellow Dragon Fruit</h1>
       
