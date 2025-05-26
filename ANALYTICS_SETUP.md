@@ -20,7 +20,7 @@ verification: {
   google: "your-google-search-console-verification-code-here",
 },
 ```
-
+123
 替换为您的实际验证码，例如：
 ```javascript
 verification: {
