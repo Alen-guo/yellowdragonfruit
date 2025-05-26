@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,6 +14,9 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+// Google Analytics 测量ID - 请替换为您的实际ID
+const GA_MEASUREMENT_ID = "G-WWGGVHBFKX";
 
 export const metadata: Metadata = {
   title: "Yellow Dragon Fruit | Health Benefits, Planting, Recipes & Buy Guide",
@@ -26,6 +30,10 @@ export const metadata: Metadata = {
     description: "Discover everything about yellow dragon fruit: health benefits, planting tips, delicious recipes, and where to buy. Your ultimate guide to this rare and nutritious fruit!",
     images: ['/images/logo.png'],
   },
+  // Google Search Console验证 - 请替换为您的实际验证码
+  verification: {
+    google: "your-google-search-console-verification-code-here",
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +43,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_title: document.title,
+              page_location: window.location.href,
+            });
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
