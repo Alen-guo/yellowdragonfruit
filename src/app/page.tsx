@@ -105,21 +105,23 @@ export default function Home() {
         <div className="text-center">
           <h2 className="text-2xl font-bold text-yellow-800 mb-4">🌟 Get Yellow Dragon Fruit Tips & Updates</h2>
           <p className="text-yellow-900 mb-6 max-w-2xl mx-auto">Join our community of fruit enthusiasts! Get weekly tips on growing, recipes, health benefits, and exclusive deals on yellow dragon fruit.</p>
-          <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
-            <input 
-              type="email" 
-              placeholder="Enter your email address" 
-              required 
-              className="flex-1 px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            />
-            <button 
-              type="submit" 
-              className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-300"
-            >
-              Subscribe Free
-            </button>
-          </form>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=alenguo7578@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition duration-300 shadow"
+          >
+            Contact Me via Gmail
+          </a>
           <p className="text-xs text-yellow-700 mt-3">✅ Free forever • 📧 Weekly tips • 🔒 No spam, unsubscribe anytime</p>
+          <p className="text-sm text-yellow-800 mt-2">
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=alenguo7578@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-yellow-900"
+            >alenguo7578@gmail.com</a>
+          </p>
         </div>
       </section>
 
