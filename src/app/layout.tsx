@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import "./globals.css";
+import MobileMenu from "./components/MobileMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,6 +61,8 @@ export default function RootLayout({
             });
           `}
         </Script>
+        {/* Favicon 设置 */}
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -84,13 +87,15 @@ export default function RootLayout({
                 
                 <Link href="/faq" className="text-yellow-900 hover:text-yellow-700 font-medium transition">FAQ</Link>
               </div>
-              {/* 移动端菜单按钮（简化版） */}
+              {/* 移动端菜单按钮 */}
               <div className="md:hidden">
-                <button className="text-yellow-900 text-xl">☰</button>
+                <MobileMenu />
               </div>
             </div>
           </div>
         </nav>
+        {/* 移动端抽屉菜单 */}
+        {/* 移除 isMenuOpen 和 setIsMenuOpen 相关的所有代码，只保留 <MobileMenu /> */}
         {children}
       </body>
     </html>
