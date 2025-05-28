@@ -159,6 +159,13 @@ export default function NutritionPage() {
         </section>
         
         <section className="mb-8">
+          <h2 className="text-2xl font-bold text-yellow-800 mb-6">Nutritional Value</h2>
+          <div className="bg-yellow-50 p-6 rounded-lg mb-6">
+            <p className="text-yellow-900 mb-4">Yellow dragon fruit is a powerhouse of essential nutrients. It is rich in magnesium (supports nerve function), phosphorus (tissue repair), potassium (fluid balance), calcium (bone and teeth health), and vitamin C (immune support). The fruit also provides iron, vitamin A, B vitamins, and niacin. The edible seeds are a good source of dietary fiber and omega-3 fatty acids, which help regulate digestion and reduce inflammation. With nearly 80% water content, yellow dragon fruit is an excellent natural hydrator. Each 100g serving contains about 50 calories, making it ideal for healthy diets and weight management.</p>
+          </div>
+        </section>
+        
+        <section className="mb-8">
           <h2 className="text-xl font-semibold text-yellow-800 mb-2">Detailed Nutritional Table (per 100g)</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-yellow-900 border border-yellow-200 rounded-lg mb-4">
