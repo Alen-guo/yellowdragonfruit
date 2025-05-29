@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import CommentMailForm from "../components/CommentMailForm";
 
 export const metadata: Metadata = {
   title: "Yellow Dragon Fruit FAQ | Questions & Answers",
@@ -71,11 +72,7 @@ export default function FAQPage() {
       `}</script>
       <section className="mt-12">
         <h2 className="text-xl font-semibold text-yellow-800 mb-2">Leave a Comment or Ask a Question</h2>
-        <form className="flex flex-col gap-4 max-w-xl">
-          <input type="text" placeholder="Your Name (required)" required className="border border-yellow-300 rounded px-3 py-2" />
-          <textarea placeholder="Your Comment or Question (required)" required className="border border-yellow-300 rounded px-3 py-2 min-h-[80px]" />
-          <button type="submit" className="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold rounded px-4 py-2 w-fit self-end">Submit</button>
-        </form>
+        <CommentMailForm />
       </section>
     </main>
   );
